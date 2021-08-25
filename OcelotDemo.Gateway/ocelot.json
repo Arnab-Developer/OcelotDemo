@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 3206
+        }
+      ],
+      "UpstreamPathTemplate": "/WeatherForecast1"
+    },
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 1989
+        }
+      ],
+      "UpstreamPathTemplate": "/WeatherForecast2"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:50910"
+  }
+}
